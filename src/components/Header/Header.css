@@ -1,0 +1,113 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: #090b13;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 36px;
+  letter-spacing: 16px;
+  z-index: 3;
+}
+.header__logo {
+  padding: 0;
+  width: 80px;
+  margin-top: 4px;
+  max-height: 70px;
+  font-size: 0;
+  display: inline-block;
+}
+.header__logo img {
+  display: block;
+  width: 100%;
+}
+.header__menu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin-right: auto;
+  margin-left: 25px;
+}
+.header__menu a {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 2px;
+  cursor: pointer;
+}
+.header__menu a img {
+  position: relative;
+  top: -2px;
+  height: 20px;
+  width: 20px;
+  z-index: auto;
+}
+.header__menu a span {
+  color: rgb(249, 249, 249);
+  font-size: 13px;
+  letter-spacing: 1.42px;
+  line-height: 1.08;
+  padding: 2px 0px;
+  white-space: nowrap;
+  transition: border-bottom 0.3s;
+  border-bottom: 1px solid transparent;
+  position: relative;
+}
+.header__menu a span:hover {
+  border-bottom: 1px solid rgb(249, 249, 249);
+}
+.header__btn {
+  cursor: pointer;
+  color: #f9f9f9;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: 1px solid #f9f9f9;
+  border-radius: 4px;
+  transition: all 0.3s ease 0s;
+}
+.header__btn:hover {
+  background-color: #f9f9f9;
+  color: #000;
+  border-color: transparent;
+}
+.header__userImg {
+  max-width: 45px;
+  max-height: 45px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.header__signOut {
+  gap: 10px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.signOut__btn {
+  cursor: pointer;
+  color: #f9f9f9;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: 1px solid #f9f9f9;
+  border-radius: 4px;
+  transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+}
